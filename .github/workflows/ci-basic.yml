@@ -1,0 +1,13 @@
+name: CI Basic
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  echo_hello:
+    runs_on: ubuntu-latest
+    steps:
+      -name: Print Hello world
+        run: echo "Hello DevOps from Github Actions!"
